@@ -1,0 +1,58 @@
+<body>
+    
+<!-- home.component.html -->
+
+<div class="container mt-4">
+    <h1>{{ pageTitle }}</h1>
+    <p>Welcome, {{ userName }}!</p>
+  
+</div>
+
+<div class="container mt-4">
+    <h2>{{pageDescription}}</h2>
+  
+    <div class="card-group">
+      <!-- Card 1 -->
+      <div class="card" [style.background-color]="card1.backgroundColor">
+        <img src="{{ card1.imageUrl }}" class="card-img-top" alt="{{ card1.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ card1.title }}</h5>
+          <p class="card-text">{{ card1.description }}</p>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="card" [style.background-color]="card2.backgroundColor">
+        <img src="{{ card2.imageUrl }}" class="card-img-top" alt="{{ card2.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ card2.title }}</h5>
+          <p class="card-text">{{ card2.description }}</p>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="card" [style.background-color]="card3.backgroundColor">
+        <img src="{{ card3.imageUrl }}" class="card-img-top" alt="{{ card3.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ card3.title }}</h5>
+          <p class="card-text">{{ card3.description }}</p>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="card" [style.background-color]="card4.backgroundColor">
+        <img src="{{ card4.imageUrl }}" class="card-img-top" alt="{{ card4.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ card4.title }}</h5>
+          <p class="card-text">{{ card4.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>

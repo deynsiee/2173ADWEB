@@ -1,0 +1,14 @@
+/* home.component.css */
+body {
+    text-align: center;
+}
+.card {
+    width: 18rem;
+    margin-right: 10px;
+  }
+  
+  .card-img-top {
+    max-height: 150px;
+    object-fit: cover;
+  }
+  
