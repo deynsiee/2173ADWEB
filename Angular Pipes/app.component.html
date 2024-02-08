@@ -1,0 +1,58 @@
+
+<body>
+  <h1>ANGULAR PIPES</h1>
+<div>
+  <h3>Adding the Date Pipe</h3>
+  Today's date:- {{presentDate | date}}
+  <hr>
+<h3>Parameters in Date</h3>
+  <p>This is a short date :- {{presentDate | date:'shortDate' }} <br/>
+  This line shows the full date :- {{presentDate | date:'fullDate'}} <br/>
+  This will show a formatted date :- {{presentDate | date: 'M/dd/yyyy'}} <br/>
+  This indicates the hours and minutes :- {{presentDate | date: 'h:mm'}}
+</p>  <hr>
+</div>
+
+<div>
+  <h3>Chained Pipes</h3>
+  <p>Date with uppercase :- {{ presentDate | date:'fullDate' | uppercase}} <br/>
+  Date with lowercase :- {{  presentDate | date:'medium' | lowercase}}
+  </p>
+  <hr>
+</div>
+
+<div>
+  <h3>Built-in Pipes</h3>
+  Seconds changing in Time: {{ time$ | async | date:'mediumTime '}} <br/>
+<hr>
+</div>
+
+<div>
+<h3>Currency Pipes</h3>
+<p>{{ price | currency:'':true }}</p>
+<p>{{ price | currency:'INR' }}</p>
+<hr>
+</div>
+
+<div>
+<h3>Slice Pipe</h3>
+<h4>Start index :- {{ Fruits | slice:2}}</h4>
+<h4>Start and end index :- {{ Fruits | slice:1:4 }}</h4>
+<h5>Negative index :- {{ Fruits | slice:-2}}</h5>
+<h6>Negative start and end index :- {{Fruits | slice:-4 : -2}}</h6>
+<hr>
+</div>
+
+<div style="text-align: center;">
+  <h3>Decimal Pipe</h3>
+  <p> {{ decimalNum1 | number }}</p>
+  <p> {{ decimalNum2 | number }}</p>
+  <p>Apply formatting :- {{ decimalNum1 | number: '3.1' }}</p>
+  <p> Apply formatting :- {{ decimalNum1 | number: '2.1-4'}}</p>
+<hr>
+</div>
+
+<div>
+<h3>JSON Pipe</h3>
+Object {{ data | json}}
+</div>
